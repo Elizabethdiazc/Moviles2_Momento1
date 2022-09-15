@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E7E6"
+    android:orientation="vertical"
+    tools:context=".VehiculoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="102dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:baselineAligned="false"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:text="Generar Automovil"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etplaca"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:gravity="center"
+            android:hint="Digite el numero de placa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etmarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:gravity="center"
+            android:hint="Digite la marca"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etmodelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:gravity="center"
+            android:hint="Digite el modelo"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etvalor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:gravity="center"
+            android:hint="Digite el valor"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbactivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:text="Activo"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btguardar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#6ED7F5"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:onClick="Guardar"
+            android:text="Guardar"
+            android:textColor="#070707"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#647EE0"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:onClick="Consultar"
+            android:text="consultar"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#6ED7F5"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:onClick="Anular"
+            android:text="Anular"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btcancelar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#6ED7F5"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:onClick="Cancelar"
+            android:text="Cancelar"
+            android:textColor="#131313"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:backgroundTint="#647EE0"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:onClick="Regresar"
+            android:text="Regresar"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            app:iconTint="#090909" />
+    </LinearLayout>
+
+</LinearLayout>
